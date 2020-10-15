@@ -18,7 +18,7 @@
   <script src="https://kit.fontawesome.com/590dbef56a.js" crossorigin="anonymous"></script>
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 
   <!-- My JS -->
   <script src="script.js"></script>
@@ -26,44 +26,111 @@
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
 
-  <title>Pomodoro App</title>
+  <title>Focus</title>
 
 </head>
 
-<body onload="template()">
-  <!-- Heading -->
-  <div class="container">
-    <h1 class="text-center my-5 heading">Pomodoro App</h1>
 
-    <!-- Main Timer -->
-    <div class="container timer">
-      <div class="row">
-        <div class="col-5">
-          <h4 id="minutes"></h4>
-        </div>
-        <div class="col-2">
-          <h4>:</h4>
-        </div>
-        <div class="col-5">
-          <h4 id="seconds"></h4>
+<body onload="template()">
+
+
+<!-- Nav bar -->
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand nav-links" href="#">Focus.io</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      </ul>
+
+
+      <a href="#" class="nav-links">Reports</a>
+      <a href="#" class="nav-links">Login</a>
+    </div>
+  </nav>
+
+
+  <div class="main">
+
+    <div class="to-do">
+      <h1>To do goes here</h1>
+    </div>
+
+    <div class="pomodoro">
+
+      <!-- Heading -->
+      <div class="container">
+        <h1 class="text-center my-5 heading">Time to focus.</h1>
+
+        <!-- Main Timer -->
+        <div class="container timer">
+          <div class="row">
+            <div class="col-5">
+              <h4 id="minutes"></h4>
+            </div>
+            <div class="col-2">
+              <h4>:</h4>
+            </div>
+            <div class="col-5">
+              <h4 id="seconds"></h4>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="my-5">
+        <h3 id="done" class="text-center"></h3>
+
+
+      </div>
+
+      <!-- Start and Reset Buttons -->
+      <div class="container d-flex justify-content-center align-items-center my-5">
+        <button class="btn" type="button" name="button"><i class="fas fa-pause fa-2x"></i></button>
+        <button class="btn" id="play-button" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
+        <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+      </div>
+
+
+
+      <div class="set-timer ">
+        <div class="row">
+          <p>Session length:</p>
+        </div>
+        <div class="row ">
+          <div class="col-sm">
+            <button type="button" onclick="decreaseSession()" class="btn" name="minus-button" id="session-minus"><i class="fas fa-minus fa-2"></i></button>
+
+          </div>
+          <div class="col-sm timer-row" id="session-text">
+            <p></p>
+          </div>
+          <div class="col-sm">
+            <button type="button" onclick="increaseSession()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
+          </div>
+        </div>
+        <div class="row">
+          <p>Break length:</p>
+        </div>
+        <div class="row">
+          <div class="col-sm">
+            <button type="button" onclick="decreaseBreak()" class="btn" name="minus-button" id="break-minus"><i class="fas fa-minus fa-2"></i></button>
+          </div>
+          <div class="col-sm timer-row" id="break-text">
+            <p></p>
+          </div>
+          <div class="col-sm">
+            <button type="button" onclick="increaseBreak()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
+
+          </div>
+        </div>
+      </div>
+
     </div>
-  </div>
-  <div class="my-5">
-    <h3 id="done" class="text-center"></h3>
-
 
   </div>
 
-  <!-- Start and Reset Buttons -->
-  <div class="container d-flex justify-content-center align-items-center my-5">
-    <button class="btn" onclick="start()"><i class="fas fa-play fa-2x"></i></button>
-    <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
-  </div>
 
 
 </body>
-
-
-<script src="scripts.js"></script>
