@@ -1,11 +1,65 @@
 /* Body background and font */
 body {
-  background: #272343;
-  font-family: "Pacifico", cursive;
+  background: #f6f5f5;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Sansita Swashed', cursive; */
 }
 
+h4{
+  font-size: 400%;
+}
+
+p{
+  font-size: 110%;
+}
+
+/* Navbar */
+
+nav{
+  background-color: #00334e;
+}
+.navbar-brand{
+  font-family: 'Sansita Swashed', cursive;
+  color: #ee6f57;
+}
+
+.nav-links{
+  color: #ee6f57;
+  padding: 0.5rem;
+}
+
+.nav-links,
+.nav-visited{
+  color: #ee6f57;
+}
+
+
+.nav-links:hover{
+  color: #ee6f57;
+  border: 2px solid #ee6f57;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-links:active{
+  color: #ee6f57;
+}
+
+/* Organizing the page */
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+/* To do list */
+.to-do{
+  width: 55%;
+}
+
+
+/* Timer */
 .heading {
-  color: #bae8e8;
+  color: #00334e;
 }
 
 .row{
@@ -13,11 +67,11 @@ body {
 }
 
 .timer{
-  color: #ffffff;
+  color: #00334e;
   text-align: center;
   width: 20rem;
   height: 20rem;
-  border: 5px solid #fff;
+  border: 5px solid #145374;
   border-radius: 10rem;
   display: flex;
   justify-content: center;
@@ -25,18 +79,40 @@ body {
 }
 
 .fa-play,
-.fa-redo-alt {
-  color: #e3f6f5;
+.fa-redo-alt,
+.fa-minus,
+.fa-plus,
+.fa-pause {
+  color: #145374;
   border: 2px solid transparent;
   padding: 1rem;
   border-radius: 2rem;
 }
 
 .fa-play:hover,
-.fa-redo-alt:hover {
-  color: #bae8e8;
-  border: 2px solid #bae8e8;
+.fa-redo-alt:hover,
+.fa-minus:hover,
+.fa-plus:hover,
+.fa-pause:hover
+ {
+  color: #ee6f57;
+  border: 2px solid #ee6f57;
   transition: 0.3s ease;
+}
+
+.set-timer{
+  justify-content: center;
+  align-items: center;
+
+}
+
+.timer-text{
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-row{
+  font-size: 200%;
 }
 
 /* Dynamic class */
@@ -49,3 +125,9 @@ body {
   border-radius: 0.5rem;
   transition: 0.5s ease;
 }
+
+
+/* Main background #f6f5f5
+Nav bar and main highligh color #00334e
+Heading and highlight word color #ee6f57
+Main word color #145374 */
