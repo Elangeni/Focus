@@ -115,6 +115,15 @@ nav{
   font-size: 200%;
 }
 
+/* Play and Puase buttons */
+#play-button{
+  display: block;
+}
+
+#pause-button,
+#resume-button{
+  display: none;
+}
 /* Dynamic class */
 /* Make the message visible */
 .show_message {
