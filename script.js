@@ -285,5 +285,5 @@ function resume() {
   click.play();
   document.getElementById("resume-button").style.display = "none";
   document.getElementById("pause-button").style.display = "block";
-  start()
+  start();
 }

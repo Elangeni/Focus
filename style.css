@@ -222,6 +222,7 @@ nav{
   display: grid;
   grid-template-columns: 3.5rem 3.5rem 3.5rem 3.5rem 0.5rem 0.5rem 3.5rem 3.5rem 3.5rem 3.5rem;
   grid-template-rows: 3.5rem 3.5rem;
+  justify-content: center;
 }
 .grid-item-heading{
   grid-column: span 5;
@@ -314,12 +315,35 @@ border-radius:  0 1.5rem 1.5rem 0;
 }
 
 /* Play and Puase buttons */
+.myButton {
+	background-color:#ee7057;
+	border-radius:28px;
+	border:1px solid #ee7057;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ee7057;
+  margin: 1rem;
+}
+.myButton:hover {
+  background-color:#f04628;
+  color:#ffffff;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 #play-button{
   display: block;
 }
 
-#pause-button,
-#resume-button{
+#resume-button,
+#pause-button{
   display: none;
 }
 /* Dynamic class */
