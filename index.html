@@ -57,7 +57,7 @@
     <div class="to-do-container">
       <div class="header">
         <div class="clear">
-          <i class = "fa fa-refresh"></i>
+          <i class="fa fa-refresh"></i>
         </div>
 
         <div id="date"></div>
@@ -72,13 +72,47 @@
         <input type="text" id="input" placeholder="Add a to-do">
       </div>
     </div>
-    
+
 
     <div class="pomodoro">
 
       <!-- Heading -->
       <div class="container">
-        <h1 class="text-center my-5 heading">Time to focus.</h1>
+        <h1 class="text-center my-5 heading">It's time to focus.</h1>
+
+        <div class="set-timer">
+
+<!-- Break timer -->
+          <div class="grid-container">
+            <div class="grid-item-heading">
+              <p>Break length:</p>
+            </div>
+            <div class="grid-item-heading">
+              <p>Session length:</p>
+            </div>
+
+
+            <div class="grid-item-left"><button type="button" onclick="decreaseBreak()" class="btn" name="minus-button" id="break-minus"><i class="fas fa-minus fa-2"></i></button></div>
+            <div class="grid-item-middle">
+              <div class="col-sm timer-row" id="break-text">
+                <p></p>
+              </div>
+            </div>
+            <div class="grid-item-right"><button type="button" onclick="increaseBreak()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
+            </div>
+
+            <div class="grid-container">
+
+              <div class="grid-item-left"><button type="button" onclick="decreaseSession()" class="btn" name="minus-button" id="session-minus"><i class="fas fa-minus fa-2"></i></button></div>
+              <div class="grid-item-middle">
+                <div class="col-sm timer-row" id="session-text">
+                  <p></p>
+                </div>
+              </div>
+              <div class="grid-item-right"><button type="button" onclick="increaseSession()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
+              </div>
+            </div>
+          </div>
 
         <!-- Main Timer -->
         <div class="container timer">
@@ -107,43 +141,6 @@
         <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
       </div>
 
-      <div class="set-timer ">
-        <div class="row">
-          <p>Session length:</p>
-        </div>
-        <div class="row ">
-          <div class="col-sm">
-            <button type="button" onclick="decreaseSession()" class="btn" name="minus-button" id="session-minus"><i class="fas fa-minus fa-2"></i></button>
 
-          </div>
-          <div class="col-sm timer-row" id="session-text">
-            <p></p>
-          </div>
-          <div class="col-sm">
-            <button type="button" onclick="increaseSession()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
-          </div>
-        </div>
-        <div class="row">
-          <p>Break length:</p>
-        </div>
-        <div class="row">
-          <div class="col-sm">
-            <button type="button" onclick="decreaseBreak()" class="btn" name="minus-button" id="break-minus"><i class="fas fa-minus fa-2"></i></button>
-          </div>
-          <div class="col-sm timer-row" id="break-text">
-            <p></p>
-          </div>
-          <div class="col-sm">
-            <button type="button" onclick="increaseBreak()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
-
-          </div>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
