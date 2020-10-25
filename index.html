@@ -82,7 +82,7 @@
 
         <div class="set-timer">
 
-<!-- Break timer -->
+          <!-- Break timer -->
           <div class="grid-container">
             <div class="grid-item-heading">
               <p>Break length:</p>
@@ -101,46 +101,50 @@
             <div class="grid-item-right"><button type="button" onclick="increaseBreak()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
             </div>
 
-            <div class="grid-container">
+            <div class="grid-item-blank">
 
-              <div class="grid-item-left"><button type="button" onclick="decreaseSession()" class="btn" name="minus-button" id="session-minus"><i class="fas fa-minus fa-2"></i></button></div>
-              <div class="grid-item-middle">
-                <div class="col-sm timer-row" id="session-text">
-                  <p></p>
-                </div>
+            </div>
+            <div class="grid-item-blank">
+
+            </div>
+
+            <div class="grid-item-left"><button type="button" onclick="decreaseSession()" class="btn" name="minus-button" id="session-minus"><i class="fas fa-minus fa-2"></i></button></div>
+            <div class="grid-item-middle">
+              <div class="col-sm timer-row" id="session-text">
+                <p></p>
               </div>
-              <div class="grid-item-right"><button type="button" onclick="increaseSession()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
-              </div>
+            </div>
+            <div class="grid-item-right"><button type="button" onclick="increaseSession()" class="btn" name="plus-button" id="session-plus"><i class="fas fa-plus"></i></i></button>
             </div>
           </div>
 
-        <!-- Main Timer -->
-        <div class="container timer">
-          <div class="row">
-            <div class="col-5">
-              <h4 id="minutes"></h4>
-            </div>
-            <div class="col-2">
-              <h4>:</h4>
-            </div>
-            <div class="col-5">
-              <h4 id="seconds"></h4>
+          <!-- Main Timer -->
+          <div class="container timer">
+            <div class="row">
+              <div class="col-5">
+                <h4 id="minutes"></h4>
+              </div>
+              <div class="col-2">
+                <h4>:</h4>
+              </div>
+              <div class="col-5">
+                <h4 id="seconds"></h4>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="my-5">
-        <h3 id="done" class="text-center"></h3>
-      </div>
+        <div class="my-5">
+          <h3 id="done" class="text-center"></h3>
+        </div>
 
-      <!-- Start and Reset Buttons -->
-      <div class="container d-flex justify-content-center align-items-center my-5">
-        <button class="btn" id="pause-button" onclick="pause()" type="button" name="button"><i class="fas fa-pause fa-2x"></i></button>
-        <button class="btn" id="play-button" onclick="prestart();start()"><i class="fas fa-play fa-2x"></i></button>
-        <button class="btn" id="resume-button" onclick="resume()"><i class="fas fa-play fa-2x"></i></button>
-        <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
-      </div>
+        <!-- Start and Reset Buttons -->
+        <div class="container d-flex justify-content-center align-items-center my-5">
+          <button class="btn" id="pause-button" onclick="pause()" type="button" name="button"><i class="fas fa-pause fa-2x"></i></button>
+          <button class="btn" id="play-button" onclick="prestart();start()"><i class="fas fa-play fa-2x"></i></button>
+          <button class="btn" id="resume-button" onclick="resume()"><i class="fas fa-play fa-2x"></i></button>
+          <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
+        </div>
 
 
-  <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
