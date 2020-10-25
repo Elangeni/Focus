@@ -21,7 +21,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Sansita+Swashed:wght@300&display=swap" rel="stylesheet">
 
   <!-- My JS -->
-  <script src="script.js"></script>
+
 
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
@@ -34,7 +34,7 @@
 <body onload="template()">
 
 
-<!-- Nav bar -->
+  <!-- Nav bar -->
   <nav class="navbar navbar-expand-lg">
     <a class="navbar-brand nav-links" href="#">Focus.io</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +54,25 @@
 
   <div class="main">
 
-    <div class="to-do">
-      <h1>To do goes here</h1>
+    <div class="to-do-container">
+      <div class="header">
+        <div class="clear">
+          <i class = "fa fa-refresh"></i>
+        </div>
+
+        <div id="date"></div>
+      </div>
+
+      <div class="content">
+        <ul id="list"></ul>
+      </div>
+
+      <div class="add-to-do">
+        <i class="fa fa-plus-circle"></i>
+        <input type="text" id="input" placeholder="Add a to-do">
+      </div>
     </div>
+    
 
     <div class="pomodoro">
 
@@ -81,8 +97,6 @@
       </div>
       <div class="my-5">
         <h3 id="done" class="text-center"></h3>
-
-
       </div>
 
       <!-- Start and Reset Buttons -->
@@ -92,8 +106,6 @@
         <button class="btn" id="resume-button" onclick="resume()"><i class="fas fa-play fa-2x"></i></button>
         <a href="index.html"><i class="fas fa-redo-alt fa-2x"></i></a>
       </div>
-
-
 
       <div class="set-timer ">
         <div class="row">
@@ -133,5 +145,5 @@
   </div>
 
 
-
+<script src="script.js"></script>
 </body>
